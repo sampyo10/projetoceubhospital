@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard do Paciente - Hospital CEUB</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="patientName">Bem-vindo, Paciente!</h1>
+        <h2>Agendar Consulta</h2>
+        <form id="scheduleForm">
+            <select id="doctorSelect" required></select>
+            <input type="date" id="appointmentDate" required>
+            <input type="time" id="appointmentTime" required>
+            <button type="submit">Agendar Consulta</button>
+            <p id="scheduleMessage"></p>
+        </form>
+        <h2>Consultas Agendadas para Esta Semana</h2>
+        <ul id="patientAppointmentList"></ul>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

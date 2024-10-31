@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Hospital CEUB</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital CEUB</h1>
+        <h2>Login</h2>
+        <div>
+            <label>
+                <input type="radio" name="userType" value="doctor" checked> Médico
+            </label>
+            <label>
+                <input type="radio" name="userType" value="patient"> Paciente
+            </label>
+        </div>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="#" id="registerLink">Cadastre-se</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

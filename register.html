@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Hospital XYZ</h1>
+        <p>Preencha o formulário para se cadastrar como Médico ou Paciente.</p>
+        
+        <form id="registerForm">
+            <label for="userType">Tipo de Usuário</label>
+            <select id="userType" name="userType" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="medico">Médico</option>
+                <option value="paciente">Paciente</option>
+            </select>
+            
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" required placeholder="Escolha um usuário">
+            
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required placeholder="Escolha uma senha">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu email">
+            
+            <button type="submit">Cadastrar</button>
+            <p id="registerMessage" class="register-message"></p>
+        </form>
+        <p class="redirect-link">Já tem uma conta? <a href="index.html">Faça login</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
